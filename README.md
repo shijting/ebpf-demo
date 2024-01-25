@@ -4,11 +4,11 @@
 
 ### 环境
 
+- golang 1.17+
 - clang
     - 我的在 clang15，但是理论上略微旧一点没关系。如果提示头文件缺失或者是不支持 bpf target，请升级
 - kernel with BTF
     - 参考：https://github.com/aquasecurity/btfhub/blob/main/docs/supported-distros.md
-- golang 1.17+
 - bpftool
     - `bpftool btf dump file /sys/kernel/btf/vmlinux format c > vmlinux.h`
 - bpf2go
